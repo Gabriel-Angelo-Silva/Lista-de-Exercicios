@@ -1,0 +1,27 @@
+def menor(lista):
+    menor = 0
+    for i in range(0, len(lista)):
+        if lista[i] <= menor:
+            menor = lista[i]
+    return menor
+
+def maior(lista):
+    maior = 0
+    for i in range(0, len(lista)):
+        if lista[i] >= maior:
+            maior = lista[i]
+    return maior
+
+def media(lista):
+    soma = 0
+    for i in range(0, len(lista)):
+        soma += lista[i]
+    media = soma / len(lista)
+    return media
+    
+    
+lista = [-10,-9,0,1,2,5,-2,-4]
+maior(lista)
+menor(lista)
+media(lista)
+print(f"A menor temperatura é {menor(lista)}°C e a maior é {maior(lista)}°C e a media de temperatura foi {media(lista)}°C")
