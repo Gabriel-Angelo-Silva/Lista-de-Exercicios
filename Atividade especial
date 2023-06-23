@@ -1,2 +1,30 @@
 '''faça uma função recursiva que receba uma lista de listas de inteiros e retorne true se verificar que todas 
 as listas da lista tem mais da metade dos seus elemenetos como 0, senão, retorn false.'''
+
+def conta_zeros(lista):
+    if not lista:
+        return 0
+
+    primeira_lista = lista[0]
+    zeros = 0
+    for elemento in primeira_lista:
+        if elemento == 0:
+            zeros += 1
+    restante_zeros = conta_zeros(lista[1:])
+    return zeros + restante_zeros
+
+def verifica_zeros(lista):
+    if not lista:
+        return True
+
+    primeira_lista = lista[0]
+    metade = len(primeira_lista) // 2
+    zeros = conta_zeros(primeira_lista)
+
+    if zeros > metade:
+        return verifica_zeros(lista[1:])
+    else:
+        return False
+
+lista1 = [[0, 0, 0, 1, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
+print(verifica_zeros(lista1))
