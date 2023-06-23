@@ -1,0 +1,2 @@
+'''faça uma função recursiva que receba uma lista de listas de inteiros e retorne true se verificar que todas 
+as listas da lista tem mais da metade dos seus elemenetos como 0, senão, retorn false.'''
