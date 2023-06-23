@@ -1,3 +1,6 @@
+'''Escreva um programa que leia a quantidade de dias, horas, minutos e segundos do
+usuário e calcule o total em segundos.'''
+
 dias = int(input("digite a quantidade de dias: "))
 horas = int(input("digite a quantidade de horas: "))
 minutos = int(input("digite a quantidade de minutos: "))
