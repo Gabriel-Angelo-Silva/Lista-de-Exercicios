@@ -28,7 +28,7 @@ def media(lista):
         return media
     
     
-lista = [-2, -2]
+lista = [-10,-9,0,1,2,5,-2,-4]
 maior(lista)
 menor(lista)
 media(lista)
