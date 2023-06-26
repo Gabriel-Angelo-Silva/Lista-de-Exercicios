@@ -34,8 +34,8 @@ menor(lista)
 media(lista)
 if len(lista) != 0:
     if maior(lista) == menor(lista):
-        print(f"a maior {maior(lista)} e menor {menor(lista)} temperatura são iguais")
+        print(f"a maior {maior(lista)} e menor {menor(lista)} temperatura são iguais, e a media de temperatura foi {media(lista)}°C")
     else:
-        print(f"A menor temperatura é {menor(lista)}°C e a maior é {maior(lista)}°C e a media de temperatura foi {media(lista)}°C")
+        print(f"A menor temperatura é {menor(lista)}°C e a maior é {maior(lista)}°C, e a media de temperatura foi {media(lista)}°C")
 else:
     print("lista zerada")
