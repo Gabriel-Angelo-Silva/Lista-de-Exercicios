@@ -1,0 +1,7 @@
+'''Crie um programa que inverta a ordem das linhas do arquivo pares.txt. A primeira linha
+deve conter o maior número; e a última, o menor.'''
+
+with open("pares.txt", "w") as pares:
+    for n in range(1001, 0, -1):
+        if n % 2 == 0:
+            pares.write(f"{n}\n")
