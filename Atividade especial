@@ -1,2 +1,6 @@
-'''faça uma função recursiva que receba uma lista de listas de inteiros e retorne true se verificar que todas 
-as listas da lista tem mais da metade dos seus elemenetos como 0, senão, retorn false.'''
+'''Defina em Python uma função recursiva que recebe como argumento uma
+lista de listas de números inteiros e devolve True se todas as listas em verificam a
+propriedade de mais de metade dos seus elementos serem 0 e False em caso contrário. Por
+exemplo, no caso da lista [[0,0,3,0],[0,5,0],[0,0,0]] a função deve devolver True pois em
+todas as listas mais de metade dos elementos são 0. Pode, se achar conveniente, definir
+funções auxiliares desde que sejam funções recursivas.'''
