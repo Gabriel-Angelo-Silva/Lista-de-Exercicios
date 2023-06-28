@@ -1,0 +1,13 @@
+'''Crie um programa que imprima as linhas de um arquivo. Esse programa deve receber três
+parâmetros pela linha de comando: o nome do arquivo, a linha inicial e a última linha a
+imprimir.'''
+
+import sys
+for parametro in sys.argv:
+    nome = parametro[1:]
+    primeiro = parametro[2:]
+    ultimo = parametro[3:]
+    
+with open(nome, "w") as nome:
+    for n in range(int(primeiro), int(ultimo)+1):
+        nome.write(f"{n}\n")
