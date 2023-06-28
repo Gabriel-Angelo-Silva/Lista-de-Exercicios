@@ -18,7 +18,6 @@ def maior(lista):
                 maior = lista[i]
         return maior
 
-
 def media(lista):
     if len(lista) != 0:
         soma = 0
@@ -26,7 +25,6 @@ def media(lista):
             soma += lista[i]
         media = soma / len(lista)
         return media
-    
     
 lista = [-10,-9,0,1,2,5,-2,-4]
 maior(lista)
