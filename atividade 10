@@ -16,9 +16,12 @@ def inverter_texto(texto):
 texto = input("Digite uma sequência de caracteres: ")
 
 texto_invertido = inverter_texto(texto)
-print("Texto invertido:", texto_invertido)
-
-if texto == texto_invertido:
-    print("O texto é um palíndromo.")
+if len(texto) != 0: 
+    if texto == texto_invertido:
+        print("Texto invertido:", texto_invertido)
+        print("O texto é um palíndromo.")
+    else:
+        print("Texto invertido:", texto_invertido)
+        print("O texto não é um palíndromo.")
 else:
-    print("O texto não é um palíndromo.")
+    print("Texto Vazio")
