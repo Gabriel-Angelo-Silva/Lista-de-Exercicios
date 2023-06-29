@@ -13,15 +13,12 @@ def inverter_texto(texto):
         texto_invertido += pilha.pop()
     return texto_invertido
 
-def verificar_palindromo(texto):
-    return texto == texto[::-1]
-
 texto = input("Digite uma sequência de caracteres: ")
 
 texto_invertido = inverter_texto(texto)
 print("Texto invertido:", texto_invertido)
 
-if verificar_palindromo(texto):
+if texto == texto_invertido:
     print("O texto é um palíndromo.")
 else:
     print("O texto não é um palíndromo.")
