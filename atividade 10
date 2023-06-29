@@ -17,11 +17,10 @@ texto = input("Digite uma sequência de caracteres: ")
 
 texto_invertido = inverter_texto(texto)
 if len(texto) != 0: 
+    print("Texto invertido:", texto_invertido)
     if texto == texto_invertido:
-        print("Texto invertido:", texto_invertido)
         print("O texto é um palíndromo.")
     else:
-        print("Texto invertido:", texto_invertido)
         print("O texto não é um palíndromo.")
 else:
     print("Texto Vazio")
