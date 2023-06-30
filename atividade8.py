@@ -2,21 +2,7 @@
 parâmetros pela linha de comando: o nome do arquivo, a linha inicial e a última linha a
 imprimir.'''
 
-
-
 import sys
-for parametro in sys.argv:
-    nome = parametro[1:]
-    primeiro = parametro[2:]
-    ultimo = parametro[3:]
-    
-with open(nome, "w") as nome:
-    for n in range(int(primeiro), int(ultimo)+1):
-        nome.write(f"{n}\n")
-
-
-
-'''import sys
 
 if len(sys.argv) != 4:
     print("Uso: python programa.py nome_arquivo linha_inicial linha_final")
@@ -34,5 +20,5 @@ with open(nome_arquivo, "r") as arquivo:
         print("Linhas inválidas.")
         sys.exit(1)
     
-    for i in range(linha_inicial - 1, linha_final):
-        print(linhas[i], end="")'''
+    for i in range(linha_inicial, linha_final+1):
+        print(linhas[i], end="")
